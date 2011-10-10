@@ -107,4 +107,3 @@ void AttachDialog::updateProcessesFinished()
   watcher->deleteLater();
 }
 
-#include "attachdialog.moc"

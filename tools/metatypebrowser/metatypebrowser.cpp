@@ -40,4 +40,4 @@ MetaTypeBrowser::MetaTypeBrowser(ProbeInterface *probe, QWidget *parent)
   ui->metaTypeView->header()->setResizeMode(0, QHeaderView::ResizeToContents);
 }
 
-#include "metatypebrowser.moc"
+#include "moc_metatypebrowser.cpp"

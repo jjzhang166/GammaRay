@@ -119,4 +119,3 @@ void ObjectListModel::objectRemovedMainThread(QObject *obj)
   }
 }
 
-#include "objectlistmodel.moc"

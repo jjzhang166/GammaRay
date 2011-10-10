@@ -67,4 +67,4 @@ void CodecBrowser::updateCodecs(const QItemSelection &selected,
   m_selectedCodecsModel->setCodecs(currentCodecNames);
 }
 
-#include "codecbrowser.moc"
+#include "moc_codecbrowser.cpp"

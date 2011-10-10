@@ -76,4 +76,3 @@ bool WidgetPreviewWidget::eventFilter(QObject *receiver, QEvent *event)
   return QWidget::eventFilter(receiver, event);
 }
 
-#include "widgetpreviewwidget.moc"

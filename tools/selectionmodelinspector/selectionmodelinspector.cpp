@@ -59,4 +59,4 @@ void SelectionModelInspector::selectionModelSelected(const QItemSelection &selec
   }
 }
 
-#include "selectionmodelinspector.moc"
+#include "moc_selectionmodelinspector.cpp"

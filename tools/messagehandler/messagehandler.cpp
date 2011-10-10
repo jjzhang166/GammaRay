@@ -217,4 +217,4 @@ QWidget *MessageHandlerFactory::createWidget(ProbeInterface *probe, QWidget *par
   return widget;
 }
 
-#include "messagehandler.moc"
+#include "moc_messagehandler.cpp"

@@ -163,4 +163,3 @@ void FontModel::toggleBoldFont(bool bold)
   emit dataChanged(index(0, 1), index(rowCount() - 1, 1));
 }
 
-#include "fontmodel.moc"

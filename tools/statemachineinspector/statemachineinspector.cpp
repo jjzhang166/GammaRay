@@ -80,4 +80,4 @@ void StateMachineInspector::stateSelected(const QItemSelection &selected,
   }
 }
 
-#include "statemachineinspector.moc"
+#include "moc_statemachineinspector.cpp"

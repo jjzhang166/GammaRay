@@ -834,4 +834,3 @@ public:
 static HitMeBabyOneMoreTime britney;
 #endif
 
-#include "probe.moc"

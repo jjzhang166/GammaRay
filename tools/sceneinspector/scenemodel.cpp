@@ -146,4 +146,3 @@ QVariant SceneModel::headerData(int section, Qt::Orientation orientation, int ro
   return QAbstractItemModel::headerData(section, orientation, role);
 }
 
-#include "scenemodel.moc"

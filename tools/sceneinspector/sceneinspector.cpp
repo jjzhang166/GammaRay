@@ -121,4 +121,4 @@ void SceneInspector::sceneItemSelected(QGraphicsItem *item)
   sceneItemSelected(index);
 }
 
-#include "sceneinspector.moc"
+#include "moc_sceneinspector.cpp"

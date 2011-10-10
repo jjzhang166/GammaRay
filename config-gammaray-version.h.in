@@ -1,0 +1,5 @@
+#define GAMMARAY_VERSION_MAJOR $$replace(GAMMARAY_VERSION, "^(\\d+)\\.\\d+\\.\\d+(-.*)?$", \\1)
+#define GAMMARAY_VERSION_MINOR $$replace(GAMMARAY_VERSION, "^(\\d+)\\.\\d+\\.\\d+(-.*)?$", \\1)
+#define GAMMARAY_VERSION_PATCH $$replace(GAMMARAY_VERSION, "^\\d+\\.(\\d+)\\.\\d+(-.*)?$", \\1)
+#define GAMMARAY_VERSION_STRING \"$$GAMMARAY_VERSION\"
+#define PROGRAM_NAME \"GammaRay\"

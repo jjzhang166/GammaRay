@@ -54,5 +54,3 @@ void SidePane::resizeEvent(QResizeEvent* e)
 
   QListView::resizeEvent(e);
 }
-
-#include "sidepane.moc"

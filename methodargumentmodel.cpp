@@ -151,4 +151,3 @@ QVector<SafeArgument> MethodArgumentModel::arguments() const
   return args;
 }
 
-#include "methodargumentmodel.moc"

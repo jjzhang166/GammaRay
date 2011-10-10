@@ -1394,6 +1394,7 @@ QFileInfo ResourceModelPrivate::resolvedInfo(QFileInfo info)
 #endif
 }
 
+#include "moc_resourcemodel.cpp"
+
 QT_END_NAMESPACE
 
-#include "resourcemodel.moc"

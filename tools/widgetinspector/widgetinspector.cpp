@@ -97,4 +97,4 @@ void WidgetInspector::widgetSelected(QWidget *widget)
   widgetSelected(index);
 }
 
-#include "widgetinspector.moc"
+#include "moc_widgetinspector.cpp"

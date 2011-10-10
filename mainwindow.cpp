@@ -166,4 +166,3 @@ void MainWindow::toolSelected()
   ui.toolStack->setCurrentIndex(ui.toolStack->indexOf(toolWidget));
 }
 
-#include "mainwindow.moc"

@@ -44,4 +44,3 @@ QVariant SingleColumnObjectProxyModel::data(const QModelIndex &proxyIndex, int r
   return KIdentityProxyModel::data(proxyIndex, role);
 }
 
-#include "singlecolumnobjectproxymodel.moc"

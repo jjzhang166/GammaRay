@@ -94,4 +94,3 @@ QVariant MetaTypesModel::headerData(int section, Qt::Orientation orientation, in
   return "MetaTypeId";
 }
 
-#include "metatypesmodel.moc"

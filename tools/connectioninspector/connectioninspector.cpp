@@ -49,4 +49,4 @@ ConnectionInspector::ConnectionInspector(ProbeInterface *probe, QWidget *parent)
   }
 }
 
-#include "connectioninspector.moc"
+#include "moc_connectioninspector.cpp"

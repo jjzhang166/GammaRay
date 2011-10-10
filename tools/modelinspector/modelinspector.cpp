@@ -76,4 +76,4 @@ ModelModel *ModelInspector::modelModel() const
   return m_modelModel;
 }
 
-#include "modelinspector.moc"
+#include "moc_modelinspector.cpp"

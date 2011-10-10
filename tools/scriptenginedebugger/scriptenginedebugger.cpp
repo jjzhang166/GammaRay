@@ -78,4 +78,3 @@ void ScriptEngineDebugger::scriptEngineSelected(int index)
   }
 }
 
-#include "scriptenginedebugger.moc"

@@ -46,5 +46,3 @@ void TextDocumentContentView::paintEvent(QPaintEvent* e)
     painter.drawRect(m_boundingBox);
   }
 }
-
-#include "textdocumentcontentview.moc"

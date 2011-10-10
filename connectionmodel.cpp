@@ -300,4 +300,3 @@ int ConnectionModel::rowCount(const QModelIndex &parent) const
   return m_connections.size();
 }
 
-#include "connectionmodel.moc"

@@ -204,5 +204,3 @@ QStringList ToolModel::plugins() const
   }
   return r;
 }
-
-#include "toolmodel.moc"

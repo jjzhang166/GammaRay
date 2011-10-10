@@ -210,5 +210,3 @@ void GdbInjector::addBreakpoint(const QByteArray &method)
   execGdbCmd("break " + method);
 #endif
 }
-
-#include "gdbinjector.moc"

@@ -106,4 +106,3 @@ void GraphicsView::drawForeground(QPainter *painter, const QRectF &rect)
   }
 }
 
-#include "graphicsview.moc"

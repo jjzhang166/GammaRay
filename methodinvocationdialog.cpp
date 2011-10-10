@@ -84,4 +84,3 @@ void MethodInvocationDialog::accept()
   QDialog::accept();
 }
 
-#include "methodinvocationdialog.moc"

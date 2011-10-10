@@ -119,4 +119,4 @@ void FontBrowser::updateFonts(const QItemSelection &selected, const QItemSelecti
   m_selectedFontModel->updateFonts(currentFonts);
 }
 
-#include "fontbrowser.moc"
+#include "moc_fontbrowser.cpp"

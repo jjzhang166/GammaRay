@@ -89,4 +89,4 @@ void ObjectInspector::widgetSelected(QWidget *widget)
   objectSelected(index);
 }
 
-#include "objectinspector.moc"
+#include "moc_objectinspector.cpp"

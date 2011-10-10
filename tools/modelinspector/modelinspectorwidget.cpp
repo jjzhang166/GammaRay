@@ -101,4 +101,4 @@ void ModelInspectorWidget::widgetSelected(QWidget *widget)
   }
 }
 
-#include "modelinspectorwidget.moc"
+#include "moc_modelinspectorwidget.cpp"

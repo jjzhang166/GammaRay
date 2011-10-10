@@ -137,4 +137,3 @@ QVariant ModelCellModel::headerData(int section, Qt::Orientation orientation, in
   return QAbstractItemModel::headerData(section, orientation, role);
 }
 
-#include "modelcellmodel.moc"

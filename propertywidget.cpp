@@ -170,4 +170,3 @@ void PropertyWidget::methodConextMenu(const QPoint& pos)
     methodActivated(index);
 }
 
-#include "propertywidget.moc"

@@ -55,4 +55,4 @@ void WebInspector::webPageSelected(int index)
   }
 }
 
-#include "webinspector.moc"
+#include "moc_webinspector.cpp"

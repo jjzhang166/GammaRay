@@ -99,4 +99,4 @@ void ResourceBrowser::setupLayout()
   }
 }
 
-#include "resourcebrowser.moc"
+#include "moc_resourcebrowser.cpp"
