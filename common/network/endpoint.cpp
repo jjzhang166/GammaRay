@@ -99,7 +99,7 @@ Protocol::ObjectAddress Endpoint::endpointAddress() const
 
 void Endpoint::readyRead()
 {
-  while (Message::canReadMessage(m_socket.data())) {
+  while (m_socket && Message::canReadMessage(m_socket.data())) {
     messageReceived(Message::readMessage(m_socket.data()));
   }
 }

@@ -23,7 +23,6 @@ ClientConnectionManager::ClientConnectionManager(QObject* parent) :
 {
   showSplashScreen();
 
-  connect(m_client, SIGNAL(disconnected()), QApplication::instance(), SLOT(quit()));
   connect(m_client, SIGNAL(connectionEstablished()), SLOT(connectionEstablished()));
   connect(m_client, SIGNAL(connectionError(QAbstractSocket::SocketError,QString)), SLOT(connectionError(QAbstractSocket::SocketError,QString)));
 }
@@ -81,14 +80,20 @@ void ClientConnectionManager::connectionError(QAbstractSocket::SocketError error
 
   hideSplashScreen();
 
-  QString errorMsg;
-  if (m_mainWindow)
-    errorMsg = tr("Lost connection to remote host: %1").arg(msg);
-  else
-    errorMsg = tr("Could not establish connection to remote host: %1").arg(msg);
+  if (m_mainWindow) {
+    QMessageBox::warning(m_mainWindow, tr("GammaRay - Connection Error"),
+                         tr("Lost connection to remote host: %1").arg(msg));
+    // interaction may result in assertions
+    // this keeps the actions alive though so we could e.g. offer a "reconnect" feature or similar
+    // in the future. Also, the user can e.g. accept the above dialog and look at the backtrace
+    // from the message handler if that showed up.
+    m_mainWindow->centralWidget()->setEnabled(false);
+  } else {
+    QMessageBox::critical(m_mainWindow, tr("GammaRay - Connection Error"),
+                          tr("Could not establish connection to remote host: %1").arg(msg));
+    QApplication::exit(1);
+  }
 
-  QMessageBox::critical(m_mainWindow, tr("GammaRay - Connection Error"), errorMsg);
-  QApplication::exit(1);
 }
 
 #include "clientconnectionmanager.moc"
